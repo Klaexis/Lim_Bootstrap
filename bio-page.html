@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+            body {
+                margin: 0;
+                background: #242426;
+            }
+            
+            .navbar {
+                padding: 0px 220px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 70px;
+                background: #171A23;
+            }
+
+            .navbar .brand {
+                float: left;
+                height: 70px;
+                position: relative;
+            }
+
+            .navbar .brand img {
+                width: 150px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            .navbar .navigation {
+                float: left;
+                line-height: 70px;
+                margin-left: 170px;
+            }
+
+            .navbar .navigation .nav-item {
+                color: lightgray;
+                font-family: Roboto;
+                font-weight: 600;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+
+            .navbar .navigation .nav-item:hover {
+                color: #3f77d1;
+            }
+
+            .navbar .profile {
+                float: right;
+                height: 70px;
+                line-height: 0;
+                position: relative;
+            }
+
+            .navbar .profile .center-content {
+                position: absolute;  
+                top: 0;  
+                height: 40px;
+                bottom: 0; 
+                right: 0;
+                margin: auto;
+            }
+
+            .navbar .profile .avatar {
+                height: 40px;
+                width: 40px;
+            }
+
+            div.banner {
+                padding: 0px 200px;
+                box-sizing: border-box;
+            }
+
+            div.background { 
+                padding: 20px;
+                box-sizing: border-box;
+                background: #2F3648;
+                height: 1370px;
+            }
+
+            img.profilePic {
+                height: 200px;
+                width: 200px;
+                margin-right: 20px;
+                float: left;
+            }
+            
+            div.user-information {
+                border-right: 5px;
+                margin-right: 20px;
+                float: center;
+            }
+
+            span.username {
+                font-size: 30px;
+                color: white;
+                font-family: Arial;
+                font-weight: 600;
+            }
+
+            span.aboutMe {
+                font-size: 14px;
+                color: lightgray;
+                display: block;
+                margin-top: 20px;
+                font-family: Arial;
+                font-weight: 400;
+            }
+            
+            div.dropdown {
+                margin-top: 10px;
+                margin-bottom: 10px; 
+            }
+            
+            .dropdown-toggle{
+                background-color: gray;
+            }
+            
+            .dropdown-menu{
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="brand" href=""><img src="https://steamcommunity-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"></a>
+            <div class="navigation">
+                <a class="nav-item" href="">STORE</a>
+                <a class="nav-item" href="">COMMUNITY</a>
+                <a class="nav-item" href="">ASTRAL VOIX</a>
+            </div>
+            <div class="profile">
+                <div class="center-content">
+                    <img class="avatar" src="https://c.tenor.com/hRuC5NSlq2AAAAAC/mashiro.gif">
+                </div>
+            </div>
+        </div>
+        
+        <div class="banner">
+            <div class="background">
+                <img class="profilePic" src="https://c.tenor.com/hRuC5NSlq2AAAAAC/mashiro.gif">
+                <div class="user-information">
+                    <span class="username">Astral Voix</span>
+                    <span class="aboutMe">Location: Nowhere, Bermuda Triangle</span>
+                    <span class="aboutMe">E-mail Address: noname@gmail.com</span>
+                    <span class="aboutMe">I am an ID-120 student currently in BS-IT at De La Salle University</span>
+                    <span class="aboutMe"> <b> Hobbies and Interests: </b> </span>
+                </div>
+                
+                <!-- Games -->
+                
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" >My Favorite Games 
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.platinumgames.com/games/nier-automata">NieR:Automata</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://nier.square-enix-games.com/en-us/">Buy NieR Replicant ver.1.22474487139</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://store.steampowered.com/app/429660/Tales_of_Berseria/">Tales of Berseria</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/">FINAL FANTASY VII REMAKE</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://store.steampowered.com/app/251150/The_Legend_of_Heroes_Trails_in_the_Sky/">Trails in the Sky Series</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="https://store.steampowered.com/app/1113000/Persona_4_Golden/">Persona 4 Golden</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel1" data-slide-to="1"></li>
+                            <li data-target="#myCarousel1" data-slide-to="2"></li>
+                            <li data-target="#myCarousel1" data-slide-to="3"></li>
+                            <li data-target="#myCarousel1" data-slide-to="4"></li>
+                            <li data-target="#myCarousel1" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="https://cdn.akamai.steamstatic.com/steam/apps/524220/capsule_616x353.jpg?t=1646911723" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1113560/capsule_616x353.jpg?t=1661350288" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.akamai.steamstatic.com/steam/apps/429660/capsule_616x353.jpg?t=1611701975" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1462040/capsule_616x353.jpg?t=1663767129" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/251150/capsule_616x353.jpg?t=1624575033" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1113000/capsule_616x353.jpg?t=1660931211" style="width:100%;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                
+                
+                <!-- Anime -->
+                
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Favorite Animes
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch">Code Geass: Hangyaku no Lelouch</a></li>
+                          <li><a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood">Fullmetal Alchemist: Brotherhood</a></li>
+                          <li><a href="https://myanimelist.net/anime/2966/Ookami_to_Koushinryou">Spice and Wolf</a></li>
+                          <li><a href="https://myanimelist.net/anime/4181/Clannad__After_Story">Clannad: After Story</a></li>
+                          <li><a href="https://myanimelist.net/anime/33352/Violet_Evergarden">Violet Evergarden</a></li>
+                          <li><a href="https://myanimelist.net/anime/37521/Vinland_Saga">Vinland Saga</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                            <li data-target="#myCarousel2" data-slide-to="3"></li>
+                            <li data-target="#myCarousel2" data-slide-to="4"></li>
+                            <li data-target="#myCarousel2" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="https://static.wixstatic.com/media/dde27e_8092cd4ee2654c4eb05597d203e53524~mv2.jpg/v1/fit/w_1000%2Ch_768%2Cal_c%2Cq_80/file.jpg" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://wallpaperaccess.com/full/1084967.jpg" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://vistapointe.net/images/spice-and-wolf-10.jpg" style="width:100;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://cdn.wallpapersafari.com/21/67/F4OiEl.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://www.entoin.com/images/viole5.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABX-JkciYo__p3s9lIeFE2gDJchYIjPn_5MqMkl8VtYUInOvXs2SoBrAorNAO16DAt81HMzvEVwI-pCdPQ9H1oEAYnTiiyz6sQ6VO.jpg?r=a1e" style="width:100%;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                
+                
+                <!-- Bands -->
+                
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Favorite Bands
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://survivesaidtheprophet.com/">Survive Said The Prophet</a></li>
+                          <li><a href="https://myfirststory.net/">My First Story</a></li>
+                          <li><a href="https://www.oneokrock.com/en/">ONE OK ROCK</a></li>
+                          <li><a href="https://www.amazarashi.com/">Amazarashi</a></li>
+                          <li><a href="https://coldrain.jp/">Coldrain</a></li>
+                          <li><a href="https://open.spotify.com/artist/19hnen14uXCUMoBAnTmrCp">Kami-sama, I have noticed</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel3" data-slide-to="1"></li>
+                            <li data-target="#myCarousel3" data-slide-to="2"></li>
+                            <li data-target="#myCarousel3" data-slide-to="3"></li>
+                            <li data-target="#myCarousel3" data-slide-to="4"></li>
+                            <li data-target="#myCarousel3" data-slide-to="5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="https://www.spirit-of-metal.com/les%20goupes/S/Survive%20Said%20The%20Prophet/pics/8fc3_2.jpg" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://cdn.allfamous.org/group/medium/my-first-story-jqit-allfamous.org.jpg" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="https://www.upsetmagazine.com/images/article/Artist-Images/O/One%20OK%20Rock/_crop1500x1000/oneokrock_2019_3.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2020/01/amazarashi.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://gekirock.com/news/assets_c/2022/06/coldrain-thumb-700xauto-90832.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="https://musicofjapanblog.files.wordpress.com/2018/09/kami.jpeg" style="width:100%;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- References: https://codepen.io/teamplaceholder/pen/agRVdW?editors=1000 -->
